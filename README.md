@@ -3,19 +3,14 @@ Design and verification of AXI Memory
 
 **Project Report On Design and Verification of AXI4 Memory**  
 
-**Submitted in Partial Fulfillment for the award of Post Graduate Diploma in VLSI Design (PG-DVLSI)** 
-
-from 
-
-**C-DAC, ACTS (Pune)** 
-
 **Authors:** 
 
-**Mr. Lalith Phani Kumar Perni 
-Mr. Sudhagona Suprith Goud 
-Mr. Utkarsh Kushwaha** 
+**Mr. Lalith Phani Kumar Perni**
 
-**Centre for Development of Advanced Computing (C-DAC), Pune**
+**Mr. Sudhagona Suprith Goud**
+
+**Mr. Utkarsh Kushwaha** 
+
 
 **TABLE OF CONTENTS** 
 
