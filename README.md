@@ -1,20 +1,9 @@
 # AXI_memory
 Design and verification of AXI Memory
 
+**Project Report On Design and Verification of AXI4 Memory**  
 
-﻿![](Aspose.Words.cfff0cf8-2c48-44f9-863c-8861a7060c7b.001.png)
-
-**Project Report On** 
-
-**Design and Verification of** 
-
-**AXI4 Memory**  
-
-![](Aspose.Words.cfff0cf8-2c48-44f9-863c-8861a7060c7b.002.png)
-
-**Submitted in Partial Fulfillment for the award of** 
-
-**Post Graduate Diploma in VLSI Design (PG-DVLSI)** 
+**Submitted in Partial Fulfillment for the award of Post Graduate Diploma in VLSI Design (PG-DVLSI)** 
 
 from 
 
@@ -67,7 +56,7 @@ from
 7. **FUTURE SCOPE** 
 7. **REFERENCES** 
 
-**Abstract ![](Aspose.Words.cfff0cf8-2c48-44f9-863c-8861a7060c7b.004.png)**
+**Abstract**
 
 In modern digital systems, the efficient and reliable transfer of data between processing elements and memory subsystems is crucial for achieving high performance. The AXI4 (Advanced eXtensible Interface 4) protocol has emerged as a standard for interconnecting components  within  System-on-Chip  (SoC)  designs,  offering  a  flexible  and  scalable solution  for  memory  access.  This  abstract  presents  a  comprehensive  approach  to  the design  and  verification  of  a  high-performance  AXI4  memory  interface,  ensuring robustness, efficiency, and compatibility within complex system architectures. 
 
