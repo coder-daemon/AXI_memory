@@ -11,11 +11,11 @@ from
 
 **Authors:** 
 
-**Mr. Lalith Phani Kumar Perni Mr. Sudhagona Suprith Goud Mr. Utkarsh Kushwaha** 
+**Mr. Lalith Phani Kumar Perni 
+Mr. Sudhagona Suprith Goud 
+Mr. Utkarsh Kushwaha** 
 
 **Centre for Development of Advanced Computing (C-DAC), Pune**
-
-![ref1]
 
 **TABLE OF CONTENTS** 
 
@@ -69,7 +69,7 @@ The  proposed  design  and  verification  methodology  yield  a  high-performanc
 Keywords: AXI4, Memory Interface, Design, Verification, UVM. 
 
 
-**INTRODUCTION ![ref1]**
+**INTRODUCTION**
 
 In  the  realm  of  modern  computing  systems,  the  quest  for  high-performance  memory interfaces stands as a crucial frontier. With the relentless pursuit of faster data processing and  seamless  interaction  between  various  components,  the  demand  for  efficient  and reliable memory interfaces has escalated. Among the plethora of protocols available, the Advanced  eXtensible  Interface  4  (AXI4)  emerges  as  a  cornerstone,  offering  a  robust framework for connecting components within a system-on-chip (SoC) architecture. 
 
@@ -82,8 +82,6 @@ Design Considerations This section navigates through the crucial design consider
 Implementation Strategies Armed with a profound understanding of AXI4 fundamentals and design considerations, this section delves into implementation strategies tailored to unleash the full performance potential of AXI4 memory interfaces. From pipelining and parallelism to advanced arbitration techniques, a myriad of strategies are explored to craft interfaces that seamlessly integrate with the broader SoC ecosystem. 
 
 Verification  Methodologies  The  reliability  and  correctness  of  high-performance  AXI4 memory  interfaces  hinge  on  robust  verification  methodologies.  In  this  section,  we elucidate  various  verification  strategies,  including  simulation-based  testing,  formal verification, and hardware emulation, essential for rigorously validating the functionality and performance of AXI4 memory interfaces across diverse usage scenarios. 
-
-![ref1]
 
 **LITERATURE SURVEY** 
 
@@ -106,7 +104,7 @@ Security  considerations  in  AXI4-based  memory  systems  are  a  critical  are
 As multi-core processors become prevalent, research addresses scalability challenges in AXI4  interconnects.  Investigations  focus  on  identifying  and  mitigating  bottlenecks  to accommodate  increasing  core  counts.  Proposed  scalable  AXI4  Memory  Interface architectures  aim  to  optimize  memory  access  in  the  context  of  evolving  multi-core 
 
 
-systems, balancing performance and scalability ![ref1]**Adaptive AXI4 Interfaces:** 
+systems, balancing performance and scalability **Adaptive AXI4 Interfaces:** 
 
 Adaptive  AXI4  Memory  Interface  designs  are  explored  for  heterogeneous  computing platforms. Researchers investigate dynamic adjustments to memory access patterns based on  varying  workloads,  optimizing  resource  utilization.  This  adaptability  is  crucial  in environments with diverse computing tasks, showcasing the flexibility of AXI4 interfaces in meeting the demands of heterogeneous computing. 
 
@@ -126,13 +124,12 @@ Some studies conduct cross-layer analyses of AXI4 interconnects within the conte
 
 Tailoring  AXI4  Memory  Interface  design  to  mobile  devices  is  a  specific  focus  area. Research explores power-aware optimization strategies, dynamically adjusting interface parameters based on the device's power state. The goal is to achieve energy-efficient 
 
-AXI4  Memory  Interfaces  without  compromising  performance,  addressing  the  unique power constraints of mobile computing platforms. ![ref1]
+AXI4  Memory  Interfaces  without  compromising  performance,  addressing  the  unique power constraints of mobile computing platforms. 
 
 **Application in Automotive Electronics:** 
 
 Another niche area of investigation involves the application of AXI4 Memory Interfaces in automotive electronics. Research in this domain explores the specific requirements and challenges  in  integrating  AXI4  interfaces  for  efficient  data  communication  within automotive systems. This includes considerations for real-time data transfer, reliability, and  safety-critical  functionalities  in  the  context  of  modern  automotive  electronics architectures. 
 
-![ref1]
 
 **AIM OF PROJECT** 
 
@@ -171,7 +168,7 @@ AXI4 is commonly used for memory-mapped communication, enabling efficient access
 AXI4's scope extends beyond individual chip designs to facilitate cross-platform integration. It is widely utilized  in  FPGA  (Field-Programmable  Gate  Array)  implementations,  allowing  for  seamless 
 
 
-communication between different programmable logic components and processors. ![ref1]
+communication between different programmable logic components and processors. 
 
 **Security Considerations:** 
 
@@ -183,7 +180,7 @@ AXI4  finds  application  in  diverse  domains,  ranging  from  consumer  electr
 
 Therefore the scope of  AXI4 is comprehensive, covering interconnectivity, performance, scalability, adaptability, memory-mapped communication, cross-platform integration, security, and application in various domains. Its widespread adoption in the industry underscores its significance in modern digital system design. 
 
-![ref1]
+
 
 **THEORETICAL DESCRIPTION OF PROJECT** 
 
@@ -268,7 +265,7 @@ control information is valid. This indicates that the destination can accept the
 Figure 2 AWREADY before AWAVALID handshake 
 
 
-In Figure 3, both the source and destination happen to indicate in the same cycle that they can transfer the data or control information. In this case the transfer occurs immediately. The arrow shows when the transfer occurs. ![ref1]
+In Figure 3, both the source and destination happen to indicate in the same cycle that they can transfer the data or control information. In this case the transfer occurs immediately. The arrow shows when the transfer occurs. 
 
 ![](Aspose.Words.cfff0cf8-2c48-44f9-863c-8861a7060c7b.007.png)
 
@@ -296,7 +293,7 @@ During a write burst, the master can assert the WVALID signal only when it drive
 
 The default value of WREADY can be HIGH, but only if the slave can always accept write data in a single cycle. The master must assert the WLAST signal when it drives the final write transfer in the burst. When WVALID is LOW, the WSTRB[3:0] signals can take any value, although it is recommended that they are either driven LOW or held at their previous value. 
 
-**Write response channel ![ref1]**
+**Write response channel **
 
 The slave can assert the BVALID signal only when it drives a valid write response. BVALID must remain asserted until the master accepts the write response and asserts BREADY. The default value of BREADY can be HIGH, but only if the master can always accept a write response in a single cycle. 
 
@@ -319,8 +316,6 @@ The master interface uses the RREADY signal to indicate that it accepts the data
 The AXI specification describes a point-to-point protocol between two interfaces: a master and slave. 
 
 The  following  diagram  shows  the  five  main  channels  that  each  AXI  interface  uses  for communication: 
-
-![ref2]
 
 ![](Aspose.Words.cfff0cf8-2c48-44f9-863c-8861a7060c7b.009.png)
 
@@ -419,7 +414,7 @@ The handshake has the following sequence of events:
 1. In clock cycle 2, the master communicates the address of the read to the slave on ARADDR and asserts ARVALID. 
 
 
-2. In clock cycle 3, the slave asserts ARREADY to indicate that it is ready to receive the address value. ![ref1]
+2. In clock cycle 3, the slave asserts ARREADY to indicate that it is ready to receive the address value. 
 
    The handshake completes on the rising edge of clock cycle 4. 
 
@@ -447,7 +442,7 @@ In this example, we transfer a single address on the AR channel to transfer mult
 
 On the R channel, the slave transfers the data to the master. In this example, the masteris waiting for data as shown by RREADY set to high. The slave drives valid RDATA and asserts RVALID for each transfer. 
 
-![ref1]
+
 
 One difference between a read transaction and a write transaction is that for a read transaction there is an RRESP response for every transfer in the transaction. This is because, in the write transaction, the slave has to send the response as a separate transfer on the B channel. In the read transaction, the slave uses the same channel to send the data back to the master and to indicate the status of the read operation. 
 
@@ -503,7 +498,7 @@ In the following list of attributes, x stands for write and read, so they apply 
 
 **arreadys**: State indicating the slave is ready to accept the address.** 
 
-![ref1]
+
 
 ![](Aspose.Words.cfff0cf8-2c48-44f9-863c-8861a7060c7b.020.jpeg)
 
@@ -530,7 +525,7 @@ In above diagram, the sequence of execution is as follows: **Write Operation:**
 Data is generated using dummy Interface and send it to master. Master sends address to slave using AW channel and data to write in the memory using W channel. Depending on address sent by master, slave writes 
 
 
-the data in memory. Overall response is sent to master after successfully completion of data using channel B. ![ref1]**Read Operation** 
+the data in memory. Overall response is sent to master after successfully completion of data using channel B. **Read Operation** 
 
 Master sends the address from where it wants to read the data to slave using channel RW. Slave sends the data and response at that particular address using channel R. Monitor and scoreboard is used to check data and functionality correctness. 
 
@@ -540,7 +535,7 @@ Master sends the address from where it wants to read the data to slave using cha
 
 ![](Aspose.Words.cfff0cf8-2c48-44f9-863c-8861a7060c7b.023.jpeg)
 
-![ref1]
+
 
 ![](Aspose.Words.cfff0cf8-2c48-44f9-863c-8861a7060c7b.024.jpeg)
 
@@ -619,7 +614,7 @@ Non-Randomized Variables:
 - **Write-Read in Fixed Burst Mode Sequence:** Generates write-read transactions with a fixed burst 
 
 
-size, testing specific burst behavior. ![ref1]
+size, testing specific burst behavior. 
 
 This sequence is designed to generate transactions that perform write and read operations in fixed 
 
@@ -675,7 +670,7 @@ This dummy interface provides an interface between the driver and the DUT, allow
 
 drive signals onto the AXI4 interface of the DUT without directly interacting with the DUT's internal logic. 
 
-![ref1]
+
 
 - **Monitor**- Monitor is a critical component responsible for observing transactions on the main interface and performing various checks to ensure protocol compliance and proper functionality. 
 - **Passive Monitoring of Data:** 
@@ -711,7 +706,7 @@ Error messages, warnings, or informative logs generated by the monitor help iden
 Overall, the monitor component serves as a watchdog for observing AXI4 transactions and ensuring protocol compliance through a series of checks. By detecting and reporting protocol violations, the monitor helps validate the correct behavior of the DUT and ensures the robustness of AXI4- based designs. 
 
 
-- Agent-  The  agent  plays  a  pivotal  role  in  the  AXI4  verification  ecosystem  by  harmonizing  the functions of the driver, sequencer, and monitor components. It oversees the generation, sequencing, and ![ref1] monitoring  of  AXI4  transactions,  thereby  enhancing  the  integrity  of  AXI4-based  design verification. 
+- Agent-  The  agent  plays  a  pivotal  role  in  the  AXI4  verification  ecosystem  by  harmonizing  the functions of the driver, sequencer, and monitor components. It oversees the generation, sequencing, and  monitoring  of  AXI4  transactions,  thereby  enhancing  the  integrity  of  AXI4-based  design verification. 
 - Environment- The env class, extending uvm\_env, oversees the entirety of the verification process. It comprises an instance of the agent class and the scoreboard component. During the build phase, env instantiates  both  the  agent  and  scoreboard.  The  agent  orchestrates  AXI4  transaction  generation, sequencing, and monitoring. Meanwhile, the scoreboard ensures transaction correctness and protocol adherence. 
 
 In summary, env plays a crucial role in ensuring thorough verification of AXI4-based designs by 
@@ -741,17 +736,17 @@ coordinating the activities of the agent and scoreboard.
 
 **Test Execution**: 
 
-`  `Initializes components. ![ref3]
+`  `Initializes components.
 
-`  `Manages system reset. ![ref3]
+`  `Manages system reset.
 
-`  `Starts transaction validation using run\_test().  ![ref3] Simulation Setup: ![ref3]
+`  `Starts transaction validation using run\_test(). Simulation Setup:
 
-`  `Generates clock signal. ![ref3]![ref1]
+`  `Generates clock signal.
 
-`  `Instantiates DUT and interfaces. ![ref3]
+`  `Instantiates DUT and interfaces.
 
-`  `Configuration: Uses uvm\_config\_db to connect interfaces to UVM components.  ![ref3] Simulation Control: Enables waveform analysis with $dumpfile and $dumpvars. ![ref3]
+`  `Configuration: Uses uvm\_config\_db to connect interfaces to UVM components. Simulation Control: Enables waveform analysis with $dumpfile and $dumpvars.
 
 **Benefits:** 
 
@@ -759,7 +754,7 @@ coordinating the activities of the agent and scoreboard.
 - Flexible interface configuration for different test scenarios. 
 - Easy integration with VCD tools for signal debugging. 
 
-**CONCLUSION ![ref1]**
+**CONCLUSION **
 
 In this project we designed AXI4 Master and Slave in system Verilog HDL and integrated them to perform read and write operations on memory. These read and write operations were performed as per  the AXI protocol following the handshake of valid and ready signals. 
 
@@ -767,7 +762,7 @@ The design was tested for variable burst lengths along with different burst type
 
 The verification of AXI4 design was done incorporating verification plan designed for an AXI4 interface, utilizing a UVM-based environment. With an automated UVM Based testbench protocol violations could be analyzed in accordance with the checks written inside the monitor classes. The scoreboard played a crucial role in verifying the correctness of transactions and ensuring the consistency of data between the Design under test and testbench. 
 
-![ref1]
+
 
 **FUTURE SCOPE** 
 
@@ -796,13 +791,13 @@ Explore future developments in power management and energy efficiency within the
 **Integration with Emerging Memory Technologies: ![](Aspose.Words.cfff0cf8-2c48-44f9-863c-8861a7060c7b.037.png)**
 
 
-Future efforts should consider integrating the AXI4 Memory Interface with emerging memory technologies. Evaluate its compatibility with non-volatile memory, resistive RAM, or other emerging memory types, and optimize the interface to leverage the unique characteristics of these technologies for improved performance and reliability.![ref1] 
+Future efforts should consider integrating the AXI4 Memory Interface with emerging memory technologies. Evaluate its compatibility with non-volatile memory, resistive RAM, or other emerging memory types, and optimize the interface to leverage the unique characteristics of these technologies for improved performance and reliability. 
 
 **Comprehensive Verification Strategies ![](Aspose.Words.cfff0cf8-2c48-44f9-863c-8861a7060c7b.038.png)**
 
 Strengthen the verification methodologies by incorporating comprehensive testing scenarios for the newly introduced features. This includes designing test cases that specifically target wrap modes, protection levels, cache interactions, atomic access with lock signals, and any other enhancements, ensuring robust verification of the extended AXI4 Memory Interface. 
 
-![ref1]
+
 
 **References** 
 
